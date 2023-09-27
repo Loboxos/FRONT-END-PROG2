@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="/styles/style.css">
-    <link rel="assets" type="image/png" href="./assets/6843050_business_community_corporate_employee_people_icon.png">
+    <link rel="icon" type="image/png" href="/assets/6843050_business_community_corporate_employee_people_icon.png">
 </head>
 <body>
     <div id="form_inscripcion" class="container">
         <h2>Crear cuenta</h2>
-        <form id="registerForm" method="POST">
+        <form id="registerForm">
             <input type="email" id = "email" placeholder="Correo electronico" required><br>    
             <input type="text" id = "usuario" placeholder="Nombre de usuario" required><br>
             <input type="text" id = "nombre"  placeholder="Nombre" required><br>
@@ -135,7 +135,8 @@
             <br><br>
         <button type="submit">Crear Cuenta</button>
         </form>
+        <div id="message"></div>
     </div>
-    <script src="/scripts/app.js"></script>
+    <script src="/scripts/crear_usuario.js"></script>
 </body>
 </html>
