@@ -171,7 +171,6 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 391px; /* Ajusta la separación superior según sea necesario */
   background-color: grey;
 }
 
@@ -180,8 +179,8 @@ p{
 }
 
 .perfil img {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin-right: 5px;
   margin-bottom: 5px; /* Agrega margen inferior para separar la imagen del nombre */
