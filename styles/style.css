@@ -1,3 +1,5 @@
+
+
 .container {
   width: 40vw;
   height: 60vh;
@@ -117,8 +119,19 @@ img{
 
 #page > header {
   grid-area: head;
-  color:#07045d ;
-  
+  color: #07045d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#busqueda {
+  width: 150px;
+  padding: 5px;
+}
+
+#crearServidor, #buscarServidor {
+  margin-left: auto;
 }
 
 #page > nav {
@@ -143,6 +156,7 @@ p{
   font-style: oblique;
   background-color: #07045d;
   font-size: 130%;
+  margin-left: 7px;
 }
 .canales{
   display: grid;
@@ -154,4 +168,21 @@ p{
   color: aliceblue;
   font-size: 300%;
 
+}
+.perfil {
+  display: flex;
+  align-items: center;
+  margin-top: 180px;
+  background-color: grey;
+}
+
+.per{
+  background-color: grey;
+}
+
+.perfil img {
+  width: 30px; /* Ajusta el tamaño de la foto de perfil según sea necesario */
+  height: 30px; /* Ajusta el tamaño de la foto de perfil según sea necesario */
+  border-radius: 50%; /* Para que la foto de perfil sea redonda */
+  margin-right: 5px; /* Espacio entre la foto de perfil y el nombre de usuario */
 }
