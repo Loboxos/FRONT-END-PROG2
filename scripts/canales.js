@@ -41,7 +41,7 @@ function mostrarCanales(canales) {
 
           // Aquí puedes agregar el código que deseas que ocurra al hacer clic en la imagen del servidor
           console.log("Se hizo clic en la imagen del canal:", canal.nombre);
-          /*getChat(servidor.id_servidor)*/
+          getChat(canal.id_canal)
           // Por ejemplo, puedes redirigir al usuario a la página del servidor o realizar alguna otra acción.
       });
 

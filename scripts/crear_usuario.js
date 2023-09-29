@@ -43,7 +43,8 @@ function register() {
         .then(response => {
             if (response.status === 201) {
                 return response.json().then(data => {
-                    window.location.href = "pantalla_3.html";
+                    window.location.href = "avatar.html";
+                    /*window.location.href = "pantalla_3.html";*/
                 });
             } else {
                 return response.json().then(data => {
