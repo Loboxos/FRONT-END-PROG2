@@ -102,6 +102,27 @@ img{
   margin-bottom: 7%;
 
 }
+
+
+.columna {
+  background-color: #211f68;;
+  border: 2px solid #07045d;
+  padding: 10px;
+
+  /*overflow-y: auto; /* Agregamos desplazamiento vertical si el contenido es largo */
+
+}
+
+#columnaCanales {
+  width: 20%;
+}
+
+#columnaMensajes {
+  width: 60%;
+}
+
+
+
 #page {
   display: grid;
   width: 100vw;
