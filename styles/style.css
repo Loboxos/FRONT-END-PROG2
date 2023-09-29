@@ -140,8 +140,9 @@ img{
 
 #page > main {
   grid-area: main;
+  display: flex;
+  align-items: flex-start; /* Esto alinea el contenido hacia arriba */
   background-color: #ffffff;
-
 }
 
 #page > footer {
@@ -158,7 +159,7 @@ p{
 .canales{
   display: grid;
   width: 20vw;
-  height: 100vh;
+  height: 92.3vh;
   margin-bottom: 0%;
   border:double;
   background-color: #07045d;
@@ -184,4 +185,67 @@ p{
   border-radius: 50%;
   margin-right: 5px;
   margin-bottom: 5px; /* Agrega margen inferior para separar la imagen del nombre */
+}
+
+#agregarCanal {
+  margin-top:500px ;
+  margin-right: auto;
+  margin-left: auto;
+  color: #ffffff;
+  font-style: oblique;
+  background-color: grey;
+  font-size: 20PX;
+  height: 40px /* Ajusta este valor según tu preferencia */
+}
+
+
+.mensajes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.mensaje {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre los mensajes */
+}
+
+.mensaje img {
+  width: 50px; /* Tamaño de la foto de perfil */
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px; /* Espacio entre la foto de perfil y el contenido del mensaje */
+}
+
+.contenido {
+  display: flex;
+  align-items: center;
+  background-color: #07045d;
+  color: #ffffff;
+}
+
+.contenido .info {
+  margin-right: 2px;
+  margin-top: 50px; /* Espacio entre el nombre de usuario y la fecha */
+}
+
+.mensaje h4, .mensaje p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.mensaje p {
+  font-size: 12px; /* Tamaño del texto de fecha y mensaje */
+}
+
+#fh{
+  width: 120px;
+  text-align: center;
+  
+}
+#msn{
+  width: 120px;
+  width: 320px;
 }
