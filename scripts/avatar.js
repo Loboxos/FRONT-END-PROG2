@@ -13,7 +13,6 @@ function obtenerIdusuario() {
     });
 }
 
-
 let avatarSeleccionado = null; 
 function seleccionarAvatar(avatarNombre) {
     avatarSeleccionado = avatarNombre; 

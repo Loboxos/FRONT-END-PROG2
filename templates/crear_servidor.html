@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Servidor</title>
+    <link rel="stylesheet" href="/styles/crear_servidor.css">
+
+</head>
+<body>
+    <h1>Crear un nuevo servidor</h1>
+    <form id="crearServidorForm">
+        <label for="nombre">Nombre del servidor:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
+
+        <label for="region">Región:</label>
+        <input type="text" id="region" name="region" required><br>
+
+        <label for="miembros">Número de miembros:</label>
+        <input type="number" id="miembros" name="miembros" required><br>
+
+        <input type="hidden" id="creador" name="creador" value="Aquí_puedes_obtener_el_id_del_creador"><br>
+
+        <label for="fecha_creacion">Fecha de creación:</label>
+        <input type="date" id="fecha_creacion" name="fecha_creacion" required><br>
+
+        <button type="submit">Crear Servidor</button>
+    </form>
+
+    <script src="/scripts/crear_servidor.js"></script>
+    <script src="/scripts/avatar.js"></script>
+
+</body>
+</html>
