@@ -25,27 +25,3 @@ function getProfile() {
      console.log("error")
     });
 };
-
-function crearElementoPerfil(nombre,avatar) {
-    const contenedorPerfil = document.querySelector(".perfil");
-    contenedorPerfil.innerHTML = ""; 
-    
-    const imagenUsuario = document.createElement("img");
-    imagenUsuario.src = "/assets/"+avatar; 
-    imagenUsuario.alt = "imagen_perfil";
-
-    const nombreUsuario = document.createElement("p");
-    nombreUsuario.textContent = nombre;
-
-
-    imagenUsuario.addEventListener("click", function () {
-        window.location.href = "perfil.html";
-    });
-
-    contenedorPerfil.appendChild(imagenUsuario);
-    contenedorPerfil.appendChild(nombreUsuario);
-}
-
-
-
-getProfile()

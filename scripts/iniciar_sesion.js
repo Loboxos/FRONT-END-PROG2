@@ -20,18 +20,17 @@ function login() {
     })
     .then(response => {
         if (response.status === 200) {
-            // Redirect to profile page if login is successful
             return response.json().then(data => {
                 window.location.href = "pantalla_3.html";
             });
         } else {
             return response.json().then(data => {
-                document.getElementById("message").innerHTML = data.message;
+                document.getElementById("errorMessage").textContent = data.message;
             });
         }
     })
     .catch(error => {
-        document.getElementById("message").innerHTML = "An error occurred.";
+        document.getElementById("errorMessage").textContent = "Ocurrio un error";
     });
 }
 

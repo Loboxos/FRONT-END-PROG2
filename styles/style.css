@@ -263,3 +263,7 @@ p{
   width: 120px;
   width: 320px;
 }
+
+#nuevoMensaje {
+  width: 80%; /* Puedes ajustar el valor del ancho según tus necesidades */
+}

@@ -4,23 +4,20 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
 })
 function formatFecha(fecha) {
     var yyyy = fecha.getFullYear().toString();
-    var mm = (fecha.getMonth() + 1).toString().padStart(2, '0'); // Meses en JavaScript comienzan en 0
+    var mm = (fecha.getMonth() + 1).toString().padStart(2, '0'); 
     var dd = fecha.getDate().toString().padStart(2, '0');
     return yyyy + '-' + mm + '-' + dd;
   }
 function register() {
-    // Obtener los elementos select por sus IDs
     var diaSelect = document.getElementById("dia");
     var mesSelect = document.getElementById("mes");
     var anioSelect = document.getElementById("anio");
     
-    // Obtener los valores seleccionados de los elementos select
     var diaSeleccionado = diaSelect.value;
     var mesSeleccionado = mesSelect.value;
     var anioSeleccionado = anioSelect.value;
     
-    // Crear una fecha en JavaScript con los valores seleccionados
-    var fecha = new Date(anioSeleccionado, mesSeleccionado - 1, diaSeleccionado); // Meses en JavaScript comienzan en 0
+    var fecha = new Date(anioSeleccionado, mesSeleccionado - 1, diaSeleccionado); 
     var fechaFormateada = formatFecha(fecha);
 
         const data = {
